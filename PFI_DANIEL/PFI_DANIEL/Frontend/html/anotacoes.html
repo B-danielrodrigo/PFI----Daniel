@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+    <title>GoodStudy - Anotações</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/tarefa.css">
+</head>
+<body>
+    <header>
+        <h1>GoodStudy</h1>
+        <p>Seu parceiro para uma jornada estudantil de sucesso</p>
+    </header>
+    <nav>
+        <a href="./home.html">Início</a>
+        <a href = "./anotacoes.html">anotações</a>
+        <a href = "./tarefas.html">Tarefas</a>
+        <a href = "./material.html">Materiais</a>
+        <a href = "#" id="sair">Sair</a>
+    </nav>
+    <main>
+        <section id="formularioAnotacao">
+            <h2>Adicionar Anotação</h2>
+            <form id="formAnotacao">
+                <label for="conteudoAnotacao">Anotação:</label>
+                <textarea id="conteudoAnotacao" name="conteudoAnotacao" placeholder="Digite sua anotação..." required></textarea><br>
+                <button type="submit" id="adicionarAnotacao">Salvar Anotação</button>
+            </form>
+        </section>
+        
+        <section id="listaAnotacoes">
+            <h2>Minhas Anotações</h2>
+            <div class="lista" id="anotacoesContainer">
+                <!-- Anotações serão adicionadas aqui dinamicamente -->
+            </div>
+        </section>
+    </main>
+    <script src="../js/anotacoes.js"></script>
+    <script src="../js/sair.js"></script>
+</body>
+</html>

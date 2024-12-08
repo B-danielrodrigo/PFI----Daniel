@@ -1,0 +1,21 @@
+main{
+    display: flex;
+}
+
+#principal h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.good {
+    color: #007BFF;
+}
+
+#principal p {
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+#imagemLateral img{
+    width: 500px;
+}

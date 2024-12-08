@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+    <title>GoodStudy</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/tarefa.css">
+</head>
+<body>
+    <header>
+        <h1>GoodStudy</h1>
+        <p>Seu parceiro para uma jornada estudantil de sucesso</p>
+    </header>
+    <nav>
+        <a href="./home.html">Início</a>
+        <a href = "./anotacoes.html">anotações</a>
+        <a href = "./tarefas.html">Tarefas</a>
+        <a href = "./material.html">Materiais</a>
+        <a href = "#" id="sair">Sair</a>
+    </nav>
+    <main>
+        <section id="formulario">
+            <h2>Criação e Gerenciamento de Tarefas</h2>
+            <form id="formTarefa">
+                <input type="hidden" id="idTarefa" value="">
+                <label for="tituloTarefa">Título da Tarefa:</label>
+                <input type="text" id="tituloTarefa" name="tituloTarefa" placeholder="Digite o título da tarefa" required>
+                
+                <label for="descricaoTarefa">Descrição:</label>
+                <textarea id="descricaoTarefa" name="descricaoTarefa" placeholder="Descreva a tarefa..." required></textarea>
+                
+                <label for="prazoTarefa">Prazo:</label>
+                <input type="date" id="prazoTarefa" name="prazoTarefa" required>
+                
+                <label for="prioridadeTarefa">Prioridade:</label>
+                <select id="prioridadeTarefa" name="prioridadeTarefa" required>
+                    <option value="alta">Alta</option>
+                    <option value="media">Média</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+                
+                <button type="submit" id="adicionarTarefa">Salvar</button>
+            </form>
+        </section>
+        
+        <section id="listaTarefas">
+            <h2>Lista de Tarefas</h2>
+            <div class="tarefas">
+                <ul id="tarefasContainer">
+                    <!-- Tarefas serão adicionadas aqui dinamicamente -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="../js/tarefa.js"></script>
+    <script src="../js/sair.js"></script>
+</body>
+</html>

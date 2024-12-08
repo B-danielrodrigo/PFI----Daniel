@@ -1,0 +1,73 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    gap: 20px;
+}
+
+main section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+}
+
+
+main section#home h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+main section#home h2 span {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+main section#home p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+main section#home ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+main section#home ul li {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+main section#tarefasUrgentes h2 {
+    font-size: 1.5rem;
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+main section#tarefasUrgentes ul {
+    list-style: none;
+    padding: 0;
+}
+
+main section#tarefasUrgentes ul li {
+    background-color: #fff3cd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffecb5;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #856404;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section#tarefasUrgentes ul li span {
+    font-weight: bold;
+    color: #d9534f;
+}

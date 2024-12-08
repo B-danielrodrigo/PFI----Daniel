@@ -1,0 +1,50 @@
+section h2{
+    text-align: center;
+    color:#007BFF;
+    margin-bottom: 30px;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+}
+.login-form button {
+    width: 100%;
+    padding: 10px 5px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.login-form button:hover{
+    background-color: #2d91fc;
+}
+
+.login-form p {
+    text-align: center;
+    margin-top: 10px;
+}
+.login-form a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.login-form a:hover{
+    color: #2d91fc;
+}
